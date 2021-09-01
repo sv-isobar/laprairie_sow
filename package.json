@@ -1,0 +1,57 @@
+{
+	"name": "template",
+	"description": "",
+	"version": "0.0.0",
+	"private": true,
+	"main": "src/index.js",
+	"dependencies": {
+		"detect-ua": "^1.0.2",
+		"glsl-blend": "^1.0.3",
+		"gsap": "^3.7.1",
+		"min-signal": "^0.0.6",
+		"mout": "^1.2.2",
+		"openssl": "^1.1.0",
+		"path": "^0.12.7",
+		"postprocessing": "6.20.1",
+		"quick-loader": "^0.1.18",
+		"scrollmagic": "^2.0.8",
+		"three": "^0.132.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.14.8",
+		"@babel/preset-env": "^7.14.8",
+		"babelify": "^10.0.0",
+		"browserify": "^17.0.0",
+		"budo": "^11.6.4",
+		"glsl-noise": "^0.0.0",
+		"glslify": "^7.1.1",
+		"glslify-hex": "^2.1.1",
+		"html-minifier": "^4.0.0",
+		"husky": "^4.3.0",
+		"jshint": "^2.12.0",
+		"node-sass": "^5.0.0",
+		"opn": "^6.0.0",
+		"pinkie-promise": "^2.0.1",
+		"prettier": "^2.1.2",
+		"pretty-quick": "^3.1.0",
+		"seed-random": "^2.2.0",
+		"simple-html-index": "^1.5.0",
+		"stringify": "^5.2.0",
+		"terser": "^5.5.0"
+	},
+	"glslify": {
+		"global": true,
+		"transform": [
+			"glslify-hex"
+		]
+	},
+	"husky": {
+		"hooks": {
+			"pre-commit": "pretty-quick --staged --pattern \"**/*.*(html|js|scss|less|css|json)\""
+		}
+	},
+	"scripts": {
+		"build": "node tasks/build",
+		"dev": "node tasks/dev"
+	}
+}
