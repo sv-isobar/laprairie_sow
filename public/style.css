@@ -1,7 +1,13 @@
 .spacer.s2 {
-	min-height: 200px;
+	min-height: 40vh;
 }
-
+#videoBg {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	min-width: 100%;
+	min-height: 100%;
+  }
 .box1,
 .box2,
 .box3 {
@@ -16,8 +22,16 @@
 	align-content: center;
 	align-items: center;
 	text-align: center;
+	font-family: LPBETA_Regular;
 }
-
+@font-face {
+	font-family: LPBETA_Light;
+	src: url("assets/font/LPBETA-Light.otf");
+  }
+  @font-face {
+	  font-family: LPBETA_Regular;
+	  src: url("assets/font/LPBETA-Regular.otf");
+	}
 p {
 	margin-left: 10%;
 	margin-right: 10%;

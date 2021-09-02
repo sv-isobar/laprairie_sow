@@ -22,7 +22,12 @@
 </head>
 
 <body>
-    <div class="bg"></div>
+    <div class="bg">
+		
+		<video autoplay muted loop id="videoBg">
+			<source src="assets/video/CREME VID BG.mp4"  type="video/mp4">
+		  </video>
+	</div>
     <div class="scrollContent">
 
         <script>
@@ -49,7 +54,8 @@
                         duration: "50%",
                         offset: 50 
                     }).setPin("#pin1")
-                    .setClassToggle("#reveal1", "visible") 
+                    .setClassToggle("#reveal1", "visible")
+                    	.addIndicators({name: "1 (duration:100)"}) 
                     .addTo(controller);
             </script>
             <div id="trigger2" class="spacer s0"></div>
@@ -69,10 +75,9 @@
                     })
                     .setPin("#pin2")
                     .setClassToggle("#reveal2", "visible") // add class to reveal
-                    //	.addIndicators({name: "1 (duration:100)"})
+                    	.addIndicators({name: "1 (duration:100)"})
                     .addTo(controller);
             </script>
-
             <div id="trigger3" class="spacer s0"></div>
             <div id="reveal3" class="reveal box2">
                 <div class="pin" id="pin3">
@@ -90,9 +95,10 @@
                         offset: 50 // move trigger to center of element
                     }).setPin("#pin3")
                     .setClassToggle("#reveal3", "visible") // add class to reveal
-                    //.addIndicators() // add indicators (requires plugin)
+                    .addIndicators() // add indicators (requires plugin)
                     .addTo(controller);
             </script>
+			
             <div id="trigger4" class="spacer s0"></div>
             <div id="reveal4" class="reveal box2">
                 <div class="pin" id="pin4">
@@ -111,7 +117,7 @@
                     })
                     .setPin("#pin4")
                     .setClassToggle("#reveal4", "visible") // add class to reveal
-                    //	.addIndicators({name: "1 (duration:100)"})
+                   .addIndicators({name: "1 (duration:100)"})
                     .addTo(controller);
             </script>
         </section>
