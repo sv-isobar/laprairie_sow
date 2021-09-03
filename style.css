@@ -1,5 +1,5 @@
 .spacer.s2 {
-	min-height: 40vh;
+	min-height: 25vh;
 }.spacer.s3 {
 	min-height: 60vh;
 }
@@ -9,10 +9,11 @@
     position: fixed;
     bottom: 50px;
     text-align: center;
-    width: 100%;
+    
+    padding-bottom: 2px;
 	font-size: 16px !important;
 	color: #4c4c4c;
-	text-decoration: underline;
+	border-bottom: #4c4c4c 1px solid;
     font-family: 'LPBETA_Regular';
 }
 .benefits
@@ -42,7 +43,7 @@
 	width: 100%;
 	text-align: center;
 	vertical-align: middle;
-	font-size: 70px;
+	font-size: 55px;
 	display: flex;
 	align-content: center;
 	align-items: center;
@@ -61,8 +62,8 @@
 	}
 p {
 	padding-top: 10%;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
 .box1 {
@@ -73,29 +74,29 @@ p {
 
 .pin {
 	width: 100%;
-    height: 100%;
+    height: 10%;
 }
 
 .box2 {
 	min-width: 50px;
 	height: 50px;
-	margin: 25px auto 25px auto;
+	margin: 0 auto 0 auto;
 }
 
 .box3 {
 	min-width: 26px;
 	height: 26px;
-	margin: 37px auto 37px auto;
+	margin: 0 auto 0 auto;
 }
 
 .reveal {
 	opacity: 0;
 
-	-webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	-ms-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
 }
 
 .reveal.visible {
@@ -110,11 +111,11 @@ p {
 #reveal1 {
 	opacity: 0;
 
-	-webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	-ms-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
 }
 
 #reveal1.visible {
@@ -130,11 +131,11 @@ p {
 #reveal2 {
 	opacity: 0;
 
-	-webkit-transition: all 1s ease-in-out;
-	-moz-transition: all 1s ease-in-out;
-	-ms-transition: all 1s ease-in-out;
-	-o-transition: all 1s ease-in-out;
-	transition: all 1s ease-in-out;
+	-webkit-transition: all 0.7s ease-in-out;
+	-moz-transition: all 0.7s ease-in-out;
+	-ms-transition: all 0.7s ease-in-out;
+	-o-transition: all 0.7s ease-in-out;
+	transition: all 0.7s ease-in-out;
 }
 
 #reveal2.visible {
@@ -147,11 +148,15 @@ p {
 }
 
 .bg {
-	position: fixed;
-	background-color: beige;
-	width: 100%;
-	height: 100%;
-	margin: 0;
+	
+    display: flex;
+    position: fixed;
+    background-color: #e2dcd4;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    flex-direction: column;
+    align-items: center;
 }
 
 html,
